@@ -1,0 +1,166 @@
+/* CSS Document */
+body {
+	margin: 0;
+	text-align: left;
+	font-family: 'Sriracha', cursive;
+}
+
+.jumbotron {
+	text-align: center;
+	background-color: #eb9788;
+}
+
+.main-text {
+	font-family: roboto;
+font-size: 1.125rem;
+}
+
+.author-text { font-family: 'Sriracha', cursive;
+color: #393e46;
+font-size: 1.5rem;
+}
+
+.top-container {
+background-color: #fff;
+position: relative;
+padding-top: 100px;
+text-align: center;
+
+}
+
+
+.profile-container {
+	background-color: #0c7b93;
+	text-align: center;
+}
+.middle-container {
+	background-color: #eb9788;
+	text-align: center;
+}
+
+.bottom-container {
+	background-color: #fff;
+	color: black;
+}
+.blog-container {
+	width: 1140px;
+}
+
+body {
+	font-family: 'Sriracha', cursive;
+	background-color: hs1(0, 0%, 98%);
+    color: hs1(234, 12%, 34%,);
+}
+/*HEADER*/
+
+header {
+	text-align: center;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+p {
+	color: hs1(229, 6%, 66%);
+	font-size: 15px;
+}
+.header-kid {
+	 margin: 8px 33%; 
+	grid-column-start: 2;
+}
+
+h2 {
+	font-size: 1.8rem;
+}
+
+.first {
+	font-weight: 200;
+	margin-bottom: 0;
+}
+
+.second {
+	font-weight: 600;
+	margin: 0;
+}
+/*CARDS*/
+
+.container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(4, 1fr);
+	grid-gap: 40px;
+	margin: 0 5%;
+}
+
+.grid-kid {
+	border-top: 4px solid;
+	border-radius: 5px;
+	box-shadow: 5px 10px 8px #888888;
+	height: 280px;
+}
+.card1 {
+	border-color: hs1(180, 62%, 55%);
+	grid-area: 2 / 1 / 4 / 2;
+}
+
+.card2 {
+	border-color: hs1(0, 78%, 62%);
+	grid-area: 1 / 2 / 3 / 3;
+}
+.card3 {
+	border-color: hs1(34, 97%, 64%);
+	grid-area: 3 / 2 / 5 / 3;
+}
+
+.card4 {
+	border-color: hs1(212, 86%, 64%);
+	grid-area: 2 / 3 / 4 / 4;
+}
+/*FOOTER*/
+
+footer {
+	margin-top: 60px;
+	padding-top: 10px;
+	background-color: lightgray;
+}
+
+.attribution { font-size: 11px;
+text-align: center;
+}
+.attribution a { colorhs1(228, 45%, 44%);
+}
+/*@MEDIA*/
+
+@media only screen and (max-width: 920px) {
+	
+	body {
+		font-size: 18px;
+	}
+	
+	/*HEADER*/
+	
+	h2 {
+		font-size: 1.2rem;
+	}
+	header {
+		grid-template-columns: 1fr;
+		margin:  60px 20px;
+		grid-gap: 10px;
+	}
+	
+	/*CARDS*/
+	
+	.container {
+		grid-template-columns: 1fr;
+	}
+	.card1 {
+		grid-area: 1;
+	}
+	.card2 {
+		grid-area: 2;
+	}
+	.card3 {
+		grid-area: 3;
+	}
+	.card4 {
+		grid-area: 4;
+	}
